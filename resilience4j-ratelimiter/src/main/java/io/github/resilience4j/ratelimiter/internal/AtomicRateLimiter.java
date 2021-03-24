@@ -451,7 +451,7 @@ public class AtomicRateLimiter implements RateLimiter {
         private final long nanoTimeStart;
 
         private State(RateLimiterConfig config,
-                      final long activeCycle, final int activePermissions, final long nanosToWait, long nanoTimeStart) {
+                      final long activeCycle, final int activePermissions, final long nanosToWait, final long nanoTimeStart) {
             this.config = config;
             this.activeCycle = activeCycle;
             this.activePermissions = activePermissions;
